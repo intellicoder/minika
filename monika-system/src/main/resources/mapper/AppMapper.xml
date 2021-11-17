@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.monika.system.mapper.AppMapper">
+
+    <resultMap id="BaseResultMap" type="com.monika.system.entity.App">
+            <id property="appId" column="app_Id" jdbcType="VARCHAR"/>
+            <result property="appName" column="app_name" jdbcType="VARCHAR"/>
+            <result property="appDesc" column="app_desc" jdbcType="VARCHAR"/>
+            <result property="creator" column="creator" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        app_Id,app_name,app_desc,
+        creator,create_time
+    </sql>
+</mapper>
